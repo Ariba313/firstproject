@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+       <h1>Basic calculator</h1>
+       <script>
+        function add(){
+        var a,b,c;
+        a=Number(document.getElementById("first").value);
+        b=Number(document.getElementById("second").value);
+        c= a + b;
+        document.getElementById("answer1").value= c;
+        }
+
+        function sub(){
+        var a,b,c;
+        a=Number(document.getElementById("first").value);
+        b=Number(document.getElementById("second").value);
+        c= a - b;
+        document.getElementById("answer2").value= c;
+        }
+
+         function mul(){
+        var a,b,c;
+        a=Number(document.getElementById("first").value);
+        b=Number(document.getElementById("second").value);
+        c= a * b;
+        document.getElementById("answer3").value= c;
+        }
+
+        function divide(){
+        var a,b,c;
+        a=Number(document.getElementById("first").value);
+        b=Number(document.getElementById("second").value);
+        c= a / b;
+        document.getElementById("answer4").value= c;
+        }
+
+        function mod(){
+        var a,b,c;
+        a=Number(document.getElementById("first").value);
+        b=Number(document.getElementById("second").value);
+        c= a % b;
+        document.getElementById("answer5").value= c;
+        }
+
+
+        </script>
+        </head>
+        <body>
+        Enter the First number : <input id="first">
+        <br>
+        <br>
+        Enter the Second number: <input id="second">
+        <br>
+        
+ <div  style="text-align: center">
+     <table>
+         <tr>
+             <br>
+             <br>
+             <br>
+             <br>
+    <td>   <button onclick="add()">Addition</button>&nbsp;  <input id="answer1">  &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;    </td> 
+        
+    <td>   <button onclick="sub()">Subtaction</button> &nbsp;<input id="answer2">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;  </td> 
+        
+    <td>   <button onclick="mul()">Multiply</button> &nbsp;<input id="answer3"> &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; </td> 
+        
+   <td>    <button onclick="divide()">Divide</button>&nbsp; <input id="answer4">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;  </td> 
+    
+    <td>    <button onclick="mod()">Modulus</button>&nbsp; <input id="answer5">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;  </td> 
+    </tr>
+    </table>
+</div>   
+    <br>
+    <br>
+    <div  style="text-align: right;">
+       <button onclick="myFunction()"> Reload page</button>
+
+<script>
+function myFunction() {
+    location.reload();
+}
+</script>
+</div>
+
+      
+</body>
+</html>

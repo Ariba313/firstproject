@@ -1,0 +1,28 @@
+<html>
+<head>
+
+</head>
+<body>
+    <!-- 
+     Chapter 49
+     Reading field values
+    -->
+    <form onsubmit="call();">
+        Email:
+        <input type="text" id="email">
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+    function call(){
+        alert(document.getElementById('email'));
+        alert(document.getElementById('email').value); 
+        var a="ariba@gmail.com" ;
+        document.getElementById("email").value = a ;
+        alert(document.getElementById('email').value); 
+    }
+    </script>
+    
+</body>
+
+</html>
